@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/aquasecurity/trivy/pkg/types"
 	"github.com/grokify/gocharts/v2/data/histogram"
@@ -62,7 +63,7 @@ func (r *Report) VulnerabilityCount() int {
 	return count
 }
 
-func (r *Report) TableSet() (*table.TableSet, error) {
+func (r *Report) TableSet(addDates bool) (*table.TableSet, error) {
 	if r.Report == nil {
 		return nil, ErrReportNotLoaded
 	}
@@ -76,7 +77,7 @@ func (r *Report) TableSet() (*table.TableSet, error) {
 	tblCounts.Name = "Counts by Sev"
 	ts.TableMap["Counts"] = tblCounts
 
-	tblVulns, err := r.VulnerabiliesTable()
+	tblVulns, err := r.VulnerabiliesTable(addDates)
 	if err != nil {
 		return nil, err
 	}
@@ -89,7 +90,7 @@ func (r *Report) TableSet() (*table.TableSet, error) {
 // VulnerabiliesTable returns a table of vulnerabilities with a column for result set.
 // It is formatted with Markdown links which can be rendered in XLSX
 // using `github.com/grokify/gocharts/data/table`.
-func (r *Report) VulnerabiliesTable() (*table.Table, error) {
+func (r *Report) VulnerabiliesTable(addDates bool) (*table.Table, error) {
 	if r.Report == nil {
 		return nil, ErrReportNotLoaded
 	}
@@ -107,6 +108,11 @@ func (r *Report) VulnerabiliesTable() (*table.Table, error) {
 		"Fixed Version",
 		"Title",
 	}
+	if addDates {
+		tbl.Columns = append(tbl.Columns, "Published Date", "Last Modified Date")
+		tbl.FormatMap[len(tbl.Columns)-2] = table.FormatDate
+		tbl.FormatMap[len(tbl.Columns)-1] = table.FormatDate
+	}
 
 	for _, res := range r.Report.Results {
 		target := res.Target
@@ -115,7 +121,7 @@ func (r *Report) VulnerabiliesTable() (*table.Table, error) {
 			if vln.PrimaryURL != "" {
 				vUIDInfoLink = fmt.Sprintf("[%s](%s)", vln.VulnerabilityID, vln.PrimaryURL)
 			}
-			tbl.Rows = append(tbl.Rows, []string{
+			row := []string{
 				target,
 				vln.PkgName,
 				vln.PkgPath,
@@ -124,7 +130,20 @@ func (r *Report) VulnerabiliesTable() (*table.Table, error) {
 				vln.InstalledVersion,
 				vln.FixedVersion,
 				vln.Title,
-			})
+			}
+			if addDates {
+				if vln.Vulnerability.PublishedDate != nil && !vln.Vulnerability.PublishedDate.IsZero() {
+					row = append(row, vln.Vulnerability.PublishedDate.Format(time.RFC3339))
+				} else {
+					row = append(row, "")
+				}
+				if vln.Vulnerability.LastModifiedDate != nil && !vln.Vulnerability.LastModifiedDate.IsZero() {
+					row = append(row, vln.Vulnerability.LastModifiedDate.Format(time.RFC3339))
+				} else {
+					row = append(row, "")
+				}
+			}
+			tbl.Rows = append(tbl.Rows, row)
 		}
 	}
 	return &tbl, nil

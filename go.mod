@@ -4,14 +4,14 @@ go 1.21
 
 require (
 	github.com/aquasecurity/trivy v0.46.1
-	github.com/grokify/gocharts/v2 v2.14.1
-	github.com/grokify/mogo v0.58.0
+	github.com/grokify/gocharts/v2 v2.15.0
+	github.com/grokify/mogo v0.60.1
 	github.com/jessevdk/go-flags v1.5.0
 )
 
 require (
-	github.com/anchore/go-struct-converter v0.0.0-20221118182256-c68fdcfa2092 // indirect
-	github.com/aquasecurity/trivy-db v0.0.0-20231005141211-4fc651f7ac8d // indirect
+	github.com/anchore/go-struct-converter v0.0.0-20230627203149-c72ef8859ca9 // indirect
+	github.com/aquasecurity/trivy-db v0.0.0-20231102003934-9b6052fceebd // indirect
 	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/google/go-containerregistry v0.16.1 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
@@ -23,7 +23,7 @@ require (
 	github.com/richardlehane/msoleps v1.0.3 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/samber/lo v1.38.1 // indirect
-	github.com/spdx/tools-golang v0.5.0 // indirect
+	github.com/spdx/tools-golang v0.5.3 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fastjson v1.6.4 // indirect
 	github.com/valyala/quicktemplate v1.7.0 // indirect
@@ -33,9 +33,11 @@ require (
 	golang.org/x/crypto v0.14.0 // indirect
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
 	golang.org/x/net v0.17.0 // indirect
-	golang.org/x/sys v0.13.0 // indirect
-	golang.org/x/text v0.13.0 // indirect
-	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
+	golang.org/x/sys v0.14.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
 	gonum.org/v1/gonum v0.14.0 // indirect
 	gopkg.in/oleiade/reflections.v1 v1.0.0 // indirect
 )
+
+// replace github.com/grokify/gocharts/v2 => ../gocharts

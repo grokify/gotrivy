@@ -37,7 +37,7 @@ func main() {
 	fmt.Printf("VLN COUNT (%d)\n", r.VulnerabilityCount())
 	fmtutil.MustPrintJSON(r.SeverityCounts())
 
-	ts, err := r.TableSet()
+	ts, err := r.TableSet(true)
 	if err != nil {
 		log.Fatal(err)
 	}
