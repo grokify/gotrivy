@@ -40,9 +40,9 @@ func (r *Report) ResultsCount() int {
 }
 
 // SeverityCounts returns the number of vulnerabiltiies detected by severity.
-func (rm *Report) SeverityCounts() map[string]uint {
+func (r *Report) SeverityCounts() map[string]uint {
 	counts := map[string]uint{}
-	for _, res := range rm.Report.Results {
+	for _, res := range r.Report.Results {
 		for _, vln := range res.Vulnerabilities {
 			sev := vln.Vulnerability.Severity
 			counts[sev]++
