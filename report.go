@@ -2,6 +2,7 @@ package gotrivy
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"os"
 
@@ -9,6 +10,8 @@ import (
 	"github.com/grokify/gocharts/v2/data/histogram"
 	"github.com/grokify/gocharts/v2/data/table"
 )
+
+var ErrReportNotLoaded = errors.New("report not loaded")
 
 func ReadFile(filename string) (*Report, error) {
 	rept := &types.Report{}
@@ -28,11 +31,11 @@ type Report struct {
 	*types.Report
 }
 
-func (rm *Report) ResultsCount() int {
-	if rm.Report == nil {
+func (r *Report) ResultsCount() int {
+	if r.Report == nil {
 		return -1
 	} else {
-		return len(rm.Report.Results)
+		return len(r.Report.Results)
 	}
 }
 
@@ -48,20 +51,23 @@ func (rm *Report) SeverityCounts() map[string]uint {
 	return counts
 }
 
-func (rm *Report) VulnerabilityCount() int {
-	if rm.Report == nil {
+func (r *Report) VulnerabilityCount() int {
+	if r.Report == nil {
 		return -1
 	}
 	count := 0
-	for _, res := range rm.Report.Results {
+	for _, res := range r.Report.Results {
 		count += len(res.Vulnerabilities)
 	}
 	return count
 }
 
-func (rm *Report) TableSet() (*table.TableSet, error) {
+func (r *Report) TableSet() (*table.TableSet, error) {
+	if r.Report == nil {
+		return nil, ErrReportNotLoaded
+	}
 	ts := table.NewTableSet("Report")
-	counts := rm.SeverityCounts()
+	counts := r.SeverityCounts()
 	hCounts := histogram.NewHistogram("Vulnerability Counts")
 	for sev, cnt := range counts {
 		hCounts.Add(sev, int(cnt))
@@ -70,7 +76,7 @@ func (rm *Report) TableSet() (*table.TableSet, error) {
 	tblCounts.Name = "Counts by Sev"
 	ts.TableMap["Counts"] = tblCounts
 
-	tblVulns, err := rm.Table()
+	tblVulns, err := r.VulnerabiliesTable()
 	if err != nil {
 		return nil, err
 	}
@@ -80,10 +86,13 @@ func (rm *Report) TableSet() (*table.TableSet, error) {
 	return ts, nil
 }
 
-// Table returns a table of vulnerabilities with a column for result set.
+// VulnerabiliesTable returns a table of vulnerabilities with a column for result set.
 // It is formatted with Markdown links which can be rendered in XLSX
 // using `github.com/grokify/gocharts/data/table`.
-func (rm *Report) Table() (*table.Table, error) {
+func (r *Report) VulnerabiliesTable() (*table.Table, error) {
+	if r.Report == nil {
+		return nil, ErrReportNotLoaded
+	}
 	tbl := table.NewTable("Vulnerability Report")
 	tbl.FormatMap = map[int]string{
 		3: table.FormatURL,
@@ -99,7 +108,7 @@ func (rm *Report) Table() (*table.Table, error) {
 		"Title",
 	}
 
-	for _, res := range rm.Report.Results {
+	for _, res := range r.Report.Results {
 		target := res.Target
 		for _, vln := range res.Vulnerabilities {
 			vUIDInfoLink := vln.VulnerabilityID
