@@ -9,6 +9,16 @@
 
 `gotrivy` is a Golang helper for [`github.com/aquasecurity/trivy`](https://github.com/aquasecurity/trivy) ([reference](https://pkg.go.dev/github.com/aquasecurity/trivy)).
 
+## Installation
+
+`go install github.com/grokify/cmd/gotrivy`
+
+## Usage
+
+`gotrivy -i <path-to-report.json> [-o path-to-report.xlsx]`
+
+If an output file isn't provided, a default output filename and path is used setting the filename to the original filename with a `.xlsx` suffix in the current directory.
+
  [build-status-svg]: https://github.com/grokify/gotrivy/workflows/test/badge.svg
  [build-status-url]: https://github.com/grokify/gotrivy/actions/workflows/test.yaml
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/gotrivy
