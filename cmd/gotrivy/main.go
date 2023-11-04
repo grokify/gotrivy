@@ -35,7 +35,7 @@ func main() {
 
 	fmt.Printf("RES COUNT (%d)\n", r.ResultsCount())
 	fmt.Printf("VLN COUNT (%d)\n", r.VulnerabilityCount())
-	fmtutil.PrintJSON(r.SeverityCounts())
+	fmtutil.MustPrintJSON(r.SeverityCounts())
 
 	ts, err := r.TableSet()
 	if err != nil {
