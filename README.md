@@ -15,7 +15,7 @@ The primary purpose of this library is currently to create XSLX reports from a J
 
 ## Installation
 
-`go install github.com/grokify/cmd/gotrivy`
+`go install github.com/grokify/gotrivy/cmd/gotrivy`
 
 ## Usage
 
