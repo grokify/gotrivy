@@ -1,6 +1,6 @@
 module github.com/grokify/gotrivy
 
-go 1.21.1
+go 1.21
 
 require (
 	github.com/aquasecurity/trivy v0.46.1
