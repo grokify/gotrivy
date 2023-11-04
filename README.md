@@ -7,7 +7,7 @@
 [![Docs][docs-godoc-svg]][docs-godoc-url]
 [![License][license-svg]][license-url]
 
-`gotrivy` is a Golang helper for [`github.com/aquasecurity/trivy`](https://github.com/aquasecurity/trivy).
+`gotrivy` is a Golang helper for [`github.com/aquasecurity/trivy`](https://github.com/aquasecurity/trivy) ([reference](https://pkg.go.dev/github.com/aquasecurity/trivy)).
 
  [build-status-svg]: https://github.com/grokify/gotrivy/workflows/test/badge.svg
  [build-status-url]: https://github.com/grokify/gotrivy/actions/workflows/test.yaml
