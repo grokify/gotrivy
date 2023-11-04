@@ -1,13 +1,11 @@
 # GoTrivy
 
-<center>
-![](logo_gotrivy.png)
+![](logo_gotrivy.png "")
 
 [![Build Status][build-status-svg]][build-status-url]
 [![Go Report Card][goreport-svg]][goreport-url]
 [![Docs][docs-godoc-svg]][docs-godoc-url]
 [![License][license-svg]][license-url]
-</center>
 
 `gotrivy` is a Golang helper for [`github.com/aquasecurity/trivy`](https://github.com/aquasecurity/trivy).
 
