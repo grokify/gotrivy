@@ -78,36 +78,92 @@ func (r *Report) ByLibraryHistogramSets() (*histogram.HistogramSets, error) {
 	return hss, nil
 }
 
+func (r *Report) BySeverityHistogramSet() (*histogram.HistogramSet, error) {
+	if r.Report == nil {
+		return nil, ErrReportNotLoaded
+	}
+	hs := histogram.NewHistogramSet("by target and severity")
+
+	for _, res := range r.Report.Results {
+		for _, vln := range res.Vulnerabilities {
+			hs.Add(res.Target, vln.Vulnerability.Severity, 1)
+		}
+	}
+
+	return hs, nil
+}
+
+func (r *Report) ByYearHistogramSets() (*histogram.HistogramSets, error) {
+	if r.Report == nil {
+		return nil, ErrReportNotLoaded
+	}
+	hss := histogram.NewHistogramSets("by year and severity")
+
+	for _, res := range r.Report.Results {
+		for _, vln := range res.Vulnerabilities {
+			var year string
+			if vln.Vulnerability.PublishedDate != nil && !vln.Vulnerability.PublishedDate.IsZero() {
+				year = vln.Vulnerability.PublishedDate.Format("2006")
+			}
+
+			hss.Add(res.Target, year, vln.Vulnerability.Severity, 1, true)
+		}
+	}
+
+	return hss, nil
+}
+
 func (r *Report) TableSet(addDates bool) (*table.TableSet, error) {
 	if r.Report == nil {
 		return nil, ErrReportNotLoaded
 	}
 	ts := table.NewTableSet("Report")
-	counts := r.SeverityCounts()
-	hCounts := histogram.NewHistogram("Vulnerability Counts")
-	for sev, cnt := range counts {
-		hCounts.Add(sev, int(cnt))
-	}
-	tblSev := hCounts.Table("Severity", "Vulnerability Count")
-	tblSev.Name = "Counts by Sev"
-	ts.TableMap[tblSev.Name] = tblSev
-
-	hsets, err := r.ByLibraryHistogramSets()
-	if err != nil {
+	/*
+		counts := r.SeverityCounts()
+		hCounts := histogram.NewHistogram("Vulnerability Counts")
+		for sev, cnt := range counts {
+			hCounts.Add(sev, int(cnt))
+		}
+		tblSev := hCounts.Table("Severity", "Vulnerability Count")
+		tblSev.Name = "Counts by Sev"
+		ts.TableMap[tblSev.Name] = tblSev
+		ts.Order = append(ts.Order, tblSev.Name)
+	*/
+	if hsetSev, err := r.BySeverityHistogramSet(); err != nil {
 		return nil, err
+	} else {
+		tblSev := hsetSev.Table("Target", "Severity", "Count")
+		tblSev.Name = "Counts by Sev"
+		ts.TableMap[tblSev.Name] = &tblSev
+		ts.Order = append(ts.Order, tblSev.Name)
 	}
-	tblLib := hsets.Table("Lib Counts", "Target", "Library", "Severity", "Count")
-	tblLib.Name = "Counts by Lib"
-	ts.TableMap[tblLib.Name] = &tblLib
 
-	tblVln, err := r.VulnerabiliesTable(addDates)
-	if err != nil {
+	if hsetsLib, err := r.ByLibraryHistogramSets(); err != nil {
 		return nil, err
+	} else {
+		tblLib := hsetsLib.Table("Lib Counts", "Target", "Library", "Severity", "Count")
+		tblLib.Name = "Counts by Lib"
+		ts.TableMap[tblLib.Name] = &tblLib
+		ts.Order = append(ts.Order, tblLib.Name)
 	}
-	tblVln.Name = "Vulnerabilities"
-	ts.TableMap[tblVln.Name] = tblVln
 
-	ts.Order = []string{tblSev.Name, tblLib.Name, tblVln.Name}
+	if hsetsYear, err := r.ByYearHistogramSets(); err != nil {
+		return nil, err
+	} else {
+		tblYear := hsetsYear.Table("Year Counts", "Target", "Year", "Severity", "Count")
+		tblYear.Name = "Counts by Year"
+		ts.TableMap[tblYear.Name] = &tblYear
+		ts.Order = append(ts.Order, tblYear.Name)
+	}
+
+	if tblVln, err := r.VulnerabiliesTable(addDates); err != nil {
+		return nil, err
+	} else {
+		tblVln.Name = "Vulnerabilities"
+		ts.TableMap[tblVln.Name] = tblVln
+		ts.Order = append(ts.Order, tblVln.Name)
+	}
+
 	return ts, nil
 }
 
