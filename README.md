@@ -11,7 +11,7 @@
 
 The primary purpose of this library is currently to create XSLX reports from a JSON report file. [Trivy provides reports in Table and JSON formats, along with a custom Template capability](https://aquasecurity.github.io/trivy/v0.17.2/examples/report/). so this libary provides an additional XLSX option. This can be run from the CLI as `cmd/gotrivy/main.go` or it can be done programmatically by inspecting the code of that file.
 
-`gotrivy.Report` is an extension of [`github.com/aquasecurity/trivy/pkg/types.Report`](https://pkg.go.dev/github.com/aquasecurity/trivy/pkg/types#Report).
+[`gotrivy.Report`](https://pkg.go.dev/github.com/grokify/gotrivy#Report) is an extension of [`github.com/aquasecurity/trivy/pkg/types.Report`](https://pkg.go.dev/github.com/aquasecurity/trivy/pkg/types#Report).
 
 ## Installation
 
