@@ -103,7 +103,6 @@ func (r *Report) ByYearHistogramSets() (*histogram.HistogramSets, error) {
 			if vln.Vulnerability.PublishedDate != nil && !vln.Vulnerability.PublishedDate.IsZero() {
 				year = vln.Vulnerability.PublishedDate.Format("2006")
 			}
-
 			hss.Add(res.Target, year, vln.Vulnerability.Severity, 1, true)
 		}
 	}
@@ -116,17 +115,7 @@ func (r *Report) TableSet(addDates bool) (*table.TableSet, error) {
 		return nil, ErrReportNotLoaded
 	}
 	ts := table.NewTableSet("Report")
-	/*
-		counts := r.SeverityCounts()
-		hCounts := histogram.NewHistogram("Vulnerability Counts")
-		for sev, cnt := range counts {
-			hCounts.Add(sev, int(cnt))
-		}
-		tblSev := hCounts.Table("Severity", "Vulnerability Count")
-		tblSev.Name = "Counts by Sev"
-		ts.TableMap[tblSev.Name] = tblSev
-		ts.Order = append(ts.Order, tblSev.Name)
-	*/
+
 	if hsetSev, err := r.BySeverityHistogramSet(); err != nil {
 		return nil, err
 	} else {
