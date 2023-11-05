@@ -16,15 +16,13 @@ var ErrReportNotLoaded = errors.New("report not loaded")
 
 func ReadFile(filename string) (*Report, error) {
 	rept := &types.Report{}
-	b, err := os.ReadFile(filename)
-	if err != nil {
+	if b, err := os.ReadFile(filename); err != nil {
 		return nil, err
-	}
-	err = json.Unmarshal(b, rept)
-	if err != nil {
+	} else if err = json.Unmarshal(b, rept); err != nil {
 		return nil, err
+	} else {
+		return &Report{Report: rept}, nil
 	}
-	return &Report{Report: rept}, err
 }
 
 // Report is an extended struct for `github.com/aquasecurity/trivy/pkg/types.Report`.
