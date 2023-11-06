@@ -162,9 +162,6 @@ func (r *Report) VulnerabiliesTable(addDates bool) (*table.Table, error) {
 		return nil, ErrReportNotLoaded
 	}
 	tbl := table.NewTable("Vulnerability Report")
-	tbl.FormatMap = map[int]string{
-		3: table.FormatURL,
-	}
 	tbl.Columns = []string{
 		"Target",
 		"Library",
@@ -174,6 +171,9 @@ func (r *Report) VulnerabiliesTable(addDates bool) (*table.Table, error) {
 		"Installed Version",
 		"Fixed Version",
 		"Title",
+	}
+	tbl.FormatMap = map[int]string{
+		3: table.FormatURL,
 	}
 	if addDates {
 		tbl.Columns = append(tbl.Columns, "Published Date", "Last Modified Date")
