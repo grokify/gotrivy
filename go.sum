@@ -5,8 +5,8 @@ github.com/andybalholm/brotli v1.0.2/go.mod h1:loMXtMfwqflxFJPmdbJO0a3KNoPuLBgiu
 github.com/andybalholm/brotli v1.0.3/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/aquasecurity/trivy v0.46.1 h1:YYqPwWTWXSYXgvExbopENlUP3Eztd+gTznnD+ZbHWvc=
 github.com/aquasecurity/trivy v0.46.1/go.mod h1:jOm8rwmwcZ2w9myAiOvS30MjKmJvpHTWRvUzPSXAvyw=
-github.com/aquasecurity/trivy-db v0.0.0-20231102003934-9b6052fceebd h1:qmgbJa5F9+lmUYU6uWajRntA5sRzf9SRoHAP17fvfqU=
-github.com/aquasecurity/trivy-db v0.0.0-20231102003934-9b6052fceebd/go.mod h1:HjsKOyECaNYlo5ALsBbQZAIVencPex+AruHG7K7/i6o=
+github.com/aquasecurity/trivy-db v0.0.0-20231106053131-81d747dba6ac h1:C8J7nnUltwuSNN9ZCSmhqHrKq0pQlXkviNS/JmNkRr4=
+github.com/aquasecurity/trivy-db v0.0.0-20231106053131-81d747dba6ac/go.mod h1:HjsKOyECaNYlo5ALsBbQZAIVencPex+AruHG7K7/i6o=
 github.com/buger/jsonparser v1.1.1 h1:2PnMjfWD7wBILjqQbt530v576A/cAbQvEW9gGIpYMUs=
 github.com/buger/jsonparser v1.1.1/go.mod h1:6RYKKt7H4d4+iWqouImQ9R2FZql3VbhNgx27UK13J/0=
 github.com/cockroachdb/apd v1.1.0 h1:3LFP3629v+1aKXU5Q37mxmRxX/pIu1nijXydLShEq5I=

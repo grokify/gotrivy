@@ -11,7 +11,7 @@ require (
 
 require (
 	github.com/anchore/go-struct-converter v0.0.0-20230627203149-c72ef8859ca9 // indirect
-	github.com/aquasecurity/trivy-db v0.0.0-20231102003934-9b6052fceebd // indirect
+	github.com/aquasecurity/trivy-db v0.0.0-20231106053131-81d747dba6ac // indirect
 	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/google/go-containerregistry v0.16.1 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
