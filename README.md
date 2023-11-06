@@ -9,7 +9,7 @@
 
 `gotrivy` is a Golang helper for [`github.com/aquasecurity/trivy`](https://github.com/aquasecurity/trivy) ([reference](https://pkg.go.dev/github.com/aquasecurity/trivy)).
 
-The primary purpose of this library is currently to create XSLX reports from a JSON report file. [Trivy provides reports in Table and JSON formats, along with a custom Template capability](https://aquasecurity.github.io/trivy/v0.17.2/examples/report/). This libary provides an additional XLSX option via [`github.com/grokify/gocharts`](https://github.com/grokify/gocharts). This can be run from the CLI as `cmd/gotrivy/main.go` or it can be done programmatically by inspecting the code of that file.
+The primary purpose of this library is currently to create XSLX reports from a JSON report file. [Trivy provides reports in Table and JSON formats, along with a custom Template capability](https://aquasecurity.github.io/trivy/v0.17.2/examples/report/). This libary provides an additional XLSX option via [`github.com/grokify/gocharts`](https://github.com/grokify/gocharts). This can be run from the CLI as [`cmd/gotrivy/main.go`](cmd/gotrivy/main.go) or it can be done programmatically by inspecting the code of that file.
 
 [`gotrivy.Report`](https://pkg.go.dev/github.com/grokify/gotrivy#Report) is an extension of [`github.com/aquasecurity/trivy/pkg/types.Report`](https://pkg.go.dev/github.com/aquasecurity/trivy/pkg/types#Report).
 
