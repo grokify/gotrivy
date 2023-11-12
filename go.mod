@@ -3,7 +3,7 @@ module github.com/grokify/gotrivy
 go 1.21
 
 require (
-	github.com/aquasecurity/trivy v0.46.1
+	github.com/aquasecurity/trivy v0.47.0
 	github.com/grokify/gocharts/v2 v2.15.1
 	github.com/grokify/mogo v0.60.1
 	github.com/jessevdk/go-flags v1.5.0

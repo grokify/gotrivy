@@ -3,8 +3,8 @@ github.com/anchore/go-struct-converter v0.0.0-20230627203149-c72ef8859ca9 h1:6CO
 github.com/anchore/go-struct-converter v0.0.0-20230627203149-c72ef8859ca9/go.mod h1:rYqSE9HbjzpHTI74vwPvae4ZVYZd1lue2ta6xHPdblA=
 github.com/andybalholm/brotli v1.0.2/go.mod h1:loMXtMfwqflxFJPmdbJO0a3KNoPuLBgiu3qAvBg8x/Y=
 github.com/andybalholm/brotli v1.0.3/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
-github.com/aquasecurity/trivy v0.46.1 h1:YYqPwWTWXSYXgvExbopENlUP3Eztd+gTznnD+ZbHWvc=
-github.com/aquasecurity/trivy v0.46.1/go.mod h1:jOm8rwmwcZ2w9myAiOvS30MjKmJvpHTWRvUzPSXAvyw=
+github.com/aquasecurity/trivy v0.47.0 h1:Nlo5x5vCoBvPTz6QkHXgpYS7jT3WoCU7n7FHQ+A8FOk=
+github.com/aquasecurity/trivy v0.47.0/go.mod h1:lG1JxqlNstRteHtxj/gZc8sTYoYNRLzZupPz32iSXIU=
 github.com/aquasecurity/trivy-db v0.0.0-20231106053131-81d747dba6ac h1:C8J7nnUltwuSNN9ZCSmhqHrKq0pQlXkviNS/JmNkRr4=
 github.com/aquasecurity/trivy-db v0.0.0-20231106053131-81d747dba6ac/go.mod h1:HjsKOyECaNYlo5ALsBbQZAIVencPex+AruHG7K7/i6o=
 github.com/buger/jsonparser v1.1.1 h1:2PnMjfWD7wBILjqQbt530v576A/cAbQvEW9gGIpYMUs=
