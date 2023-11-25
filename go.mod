@@ -4,15 +4,14 @@ go 1.21
 
 require (
 	github.com/aquasecurity/trivy v0.47.0
-	github.com/grokify/gocharts/v2 v2.15.1
-	github.com/grokify/mogo v0.60.1
+	github.com/grokify/gocharts/v2 v2.15.2
+	github.com/grokify/mogo v0.61.0
 	github.com/jessevdk/go-flags v1.5.0
 )
 
 require (
 	github.com/anchore/go-struct-converter v0.0.0-20230627203149-c72ef8859ca9 // indirect
 	github.com/aquasecurity/trivy-db v0.0.0-20231106053131-81d747dba6ac // indirect
-	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/google/go-containerregistry v0.16.1 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
 	github.com/huandu/xstrings v1.4.0 // indirect
@@ -25,7 +24,6 @@ require (
 	github.com/samber/lo v1.38.1 // indirect
 	github.com/spdx/tools-golang v0.5.3 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fastjson v1.6.4 // indirect
 	github.com/valyala/quicktemplate v1.7.0 // indirect
 	github.com/xuri/efp v0.0.0-20231025114914-d1ff6096ae53 // indirect
 	github.com/xuri/excelize/v2 v2.8.0 // indirect
@@ -37,7 +35,6 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
 	gonum.org/v1/gonum v0.14.0 // indirect
-	gopkg.in/oleiade/reflections.v1 v1.0.0 // indirect
 )
 
 // replace github.com/grokify/gocharts/v2 => ../gocharts
