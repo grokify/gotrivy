@@ -4,8 +4,8 @@ go 1.21
 
 require (
 	github.com/aquasecurity/trivy v0.48.3
-	github.com/grokify/gocharts/v2 v2.17.1
-	github.com/grokify/mogo v0.62.8
+	github.com/grokify/gocharts/v2 v2.18.1
+	github.com/grokify/mogo v0.63.1
 	github.com/jessevdk/go-flags v1.5.0
 )
 
@@ -20,7 +20,7 @@ require (
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/richardlehane/mscfb v1.0.4 // indirect
 	github.com/richardlehane/msoleps v1.0.3 // indirect
-	github.com/rivo/uniseg v0.4.4 // indirect
+	github.com/rivo/uniseg v0.4.6 // indirect
 	github.com/samber/lo v1.38.1 // indirect
 	github.com/spdx/tools-golang v0.5.4-0.20231108154018-0c0f394b5e1a // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
