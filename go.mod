@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/aquasecurity/trivy v0.48.3
 	github.com/grokify/gocharts/v2 v2.17.1
-	github.com/grokify/mogo v0.62.8
+	github.com/grokify/mogo v0.63.1
 	github.com/jessevdk/go-flags v1.5.0
 )
 
