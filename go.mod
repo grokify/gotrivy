@@ -5,7 +5,7 @@ go 1.22
 toolchain go1.22.1
 
 require (
-	github.com/aquasecurity/trivy v0.50.0
+	github.com/aquasecurity/trivy v0.50.1
 	github.com/grokify/gocharts/v2 v2.18.2
 	github.com/grokify/mogo v0.63.3
 	github.com/jessevdk/go-flags v1.5.0
