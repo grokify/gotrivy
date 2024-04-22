@@ -2,17 +2,17 @@ module github.com/grokify/gotrivy
 
 go 1.22
 
-toolchain go1.22.1
+toolchain go1.22.2
 
 require (
-	github.com/aquasecurity/trivy v0.50.1
+	github.com/aquasecurity/trivy v0.50.2
 	github.com/grokify/gocharts/v2 v2.18.5
-	github.com/grokify/mogo v0.63.8
+	github.com/grokify/mogo v0.63.9
 	github.com/jessevdk/go-flags v1.5.0
 )
 
 require (
-	github.com/aquasecurity/trivy-db v0.0.0-20240304133434-db9bf07792af // indirect
+	github.com/aquasecurity/trivy-db v0.0.0-20240401130858-5bfbd975e506 // indirect
 	github.com/google/go-containerregistry v0.19.1 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
@@ -31,7 +31,7 @@ require (
 	github.com/xuri/excelize/v2 v2.8.1 // indirect
 	github.com/xuri/nfp v0.0.0-20240318013403-ab9948c2c4a7 // indirect
 	golang.org/x/crypto v0.22.0 // indirect
-	golang.org/x/exp v0.0.0-20240409090435-93d18d7e34b8 // indirect
+	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f // indirect
 	golang.org/x/net v0.24.0 // indirect
 	golang.org/x/sys v0.19.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
