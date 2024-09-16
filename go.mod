@@ -5,7 +5,7 @@ go 1.22.4
 toolchain go1.22.5
 
 require (
-	github.com/aquasecurity/trivy v0.55.0
+	github.com/aquasecurity/trivy v0.55.1
 	github.com/grokify/gocharts/v2 v2.20.1
 	github.com/grokify/mogo v0.64.11
 	github.com/jessevdk/go-flags v1.6.1
@@ -38,7 +38,7 @@ require (
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
 	github.com/aquasecurity/go-version v0.0.0-20240603093900-cf8a8d29271d // indirect
 	github.com/aquasecurity/trivy-checks v0.13.1-0.20240830230553-53ddbbade784 // indirect
-	github.com/aquasecurity/trivy-db v0.0.0-20240802062956-ed690fa5e757 // indirect
+	github.com/aquasecurity/trivy-db v0.0.0-20240910133327-7e0f4d2ed4c1 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/aws/aws-sdk-go v1.55.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.59.0 // indirect
