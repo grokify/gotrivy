@@ -5,7 +5,7 @@ go 1.22.4
 toolchain go1.22.5
 
 require (
-	github.com/aquasecurity/trivy v0.55.2
+	github.com/aquasecurity/trivy v0.56.1
 	github.com/grokify/gocharts/v2 v2.20.1
 	github.com/grokify/mogo v0.64.11
 	github.com/jessevdk/go-flags v1.6.1
@@ -24,8 +24,8 @@ require (
 	github.com/BurntSushi/toml v1.4.0 // indirect
 	github.com/MakeNowJust/heredoc v1.0.0 // indirect
 	github.com/Masterminds/goutils v1.1.1 // indirect
-	github.com/Masterminds/semver/v3 v3.2.1 // indirect
-	github.com/Masterminds/sprig/v3 v3.2.3 // indirect
+	github.com/Masterminds/semver/v3 v3.3.0 // indirect
+	github.com/Masterminds/sprig/v3 v3.3.0 // indirect
 	github.com/Masterminds/squirrel v1.5.4 // indirect
 	github.com/Microsoft/go-winio v0.6.2 // indirect
 	github.com/Microsoft/hcsshim v0.12.4 // indirect
@@ -37,12 +37,12 @@ require (
 	github.com/apparentlymart/go-cidr v1.1.0 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
 	github.com/aquasecurity/go-version v0.0.0-20240603093900-cf8a8d29271d // indirect
-	github.com/aquasecurity/trivy-checks v0.13.1-0.20240830230553-53ddbbade784 // indirect
+	github.com/aquasecurity/trivy-checks v1.1.0 // indirect
 	github.com/aquasecurity/trivy-db v0.0.0-20240910133327-7e0f4d2ed4c1 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/aws/aws-sdk-go v1.55.5 // indirect
-	github.com/aws/aws-sdk-go-v2/service/s3 v1.59.0 // indirect
-	github.com/aws/smithy-go v1.20.4 // indirect
+	github.com/aws/aws-sdk-go-v2/service/s3 v1.63.2 // indirect
+	github.com/aws/smithy-go v1.21.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
@@ -50,7 +50,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chai2010/gettext-go v1.0.3 // indirect
 	github.com/cloudflare/circl v1.4.0 // indirect
-	github.com/containerd/containerd v1.7.21 // indirect
+	github.com/containerd/containerd v1.7.22 // indirect
 	github.com/containerd/errdefs v0.1.0 // indirect
 	github.com/containerd/log v0.1.0 // indirect
 	github.com/containerd/platforms v0.2.1 // indirect
@@ -59,9 +59,9 @@ require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/distribution/reference v0.6.0 // indirect
 	github.com/dlclark/regexp2 v1.11.4 // indirect
-	github.com/docker/cli v27.1.2+incompatible // indirect
+	github.com/docker/cli v27.2.1+incompatible // indirect
 	github.com/docker/distribution v2.8.3+incompatible // indirect
-	github.com/docker/docker v27.1.2+incompatible // indirect
+	github.com/docker/docker v27.3.1+incompatible // indirect
 	github.com/docker/docker-credential-helpers v0.8.2 // indirect
 	github.com/docker/go-connections v0.5.0 // indirect
 	github.com/docker/go-metrics v0.0.1 // indirect
@@ -111,7 +111,7 @@ require (
 	github.com/hashicorp/go-uuid v1.0.3 // indirect
 	github.com/hashicorp/go-version v1.7.0 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
-	github.com/hashicorp/hcl/v2 v2.21.0 // indirect
+	github.com/hashicorp/hcl/v2 v2.22.0 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
 	github.com/imdario/mergo v0.3.16 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
@@ -143,7 +143,7 @@ require (
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
-	github.com/moby/buildkit v0.15.2 // indirect
+	github.com/moby/buildkit v0.16.0 // indirect
 	github.com/moby/docker-image-spec v1.3.1 // indirect
 	github.com/moby/locker v1.0.1 // indirect
 	github.com/moby/spdystream v0.5.0 // indirect
@@ -155,7 +155,7 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
-	github.com/open-policy-agent/opa v0.67.1 // indirect
+	github.com/open-policy-agent/opa v0.68.1-0.20240903211041-76f7038ea2d1 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.0 // indirect
 	github.com/owenrumney/squealer v1.2.4 // indirect
@@ -164,7 +164,7 @@ require (
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
-	github.com/prometheus/client_golang v1.20.1 // indirect
+	github.com/prometheus/client_golang v1.20.2 // indirect
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.55.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
@@ -216,7 +216,7 @@ require (
 	golang.org/x/crypto v0.27.0 // indirect
 	golang.org/x/exp v0.0.0-20240904232852-e7e105dedf7e // indirect
 	golang.org/x/image v0.20.0 // indirect
-	golang.org/x/mod v0.20.0 // indirect
+	golang.org/x/mod v0.21.0 // indirect
 	golang.org/x/net v0.29.0 // indirect
 	golang.org/x/oauth2 v0.22.0 // indirect
 	golang.org/x/sync v0.8.0 // indirect
@@ -238,7 +238,7 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	helm.sh/helm/v3 v3.15.4 // indirect
+	helm.sh/helm/v3 v3.16.1 // indirect
 	k8s.io/api v0.31.0 // indirect
 	k8s.io/apiextensions-apiserver v0.31.0 // indirect
 	k8s.io/apimachinery v0.31.0 // indirect
