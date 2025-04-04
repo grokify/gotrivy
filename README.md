@@ -102,9 +102,9 @@ Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 2, CRITICAL: 0)
 % trivy image --reset
 ```
 
- [build-status-svg]: https://github.com/grokify/gotrivy/actions/workflows/ci.yaml/badge.svg?branch=master
+ [build-status-svg]: https://github.com/grokify/gotrivy/actions/workflows/ci.yaml/badge.svg?branch=main
  [build-status-url]: https://github.com/grokify/gotrivy/actions/workflows/ci.yaml
- [lint-status-svg]: https://github.com/grokify/gotrivy/actions/workflows/lint.yaml/badge.svg?branch=master
+ [lint-status-svg]: https://github.com/grokify/gotrivy/actions/workflows/lint.yaml/badge.svg?branch=main
  [lint-status-url]: https://github.com/grokify/gotrivy/actions/workflows/lint.yaml
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/gotrivy
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/gotrivy
