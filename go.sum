@@ -1,5 +1,5 @@
-github.com/aquasecurity/trivy v0.61.0 h1:FPRAQ9w6tyAXSNsc6encybNfNoRh4l89oPNmkJm+sgM=
-github.com/aquasecurity/trivy v0.61.0/go.mod h1:pZ+6kIfGdyAX7UGr0KF8/fwR1pk36STyaQtLvkHgXLA=
+github.com/aquasecurity/trivy v0.61.1 h1:Y7Ti5Nm5C2PAlMvPaAW3U/Oe4lQ7717lkjdo0qb+Cyc=
+github.com/aquasecurity/trivy v0.61.1/go.mod h1:QaAc1AijI1d9rEyKdepEpbPDyiUan4FL+qykVA/0WdY=
 github.com/aquasecurity/trivy-db v0.0.0-20250318124801-0d582dde1179 h1:BdHaWzPlP/b9dYMF5VrYdHHGeuGv3IVd5g6gGbX1t3c=
 github.com/aquasecurity/trivy-db v0.0.0-20250318124801-0d582dde1179/go.mod h1:H1qxH5o8nwGyFuFcV/PjxoYdkHa5jvVEhdnX1mRPouU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
