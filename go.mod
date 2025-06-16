@@ -5,14 +5,14 @@ go 1.24.2
 require (
 	github.com/aquasecurity/trivy v0.63.0
 	github.com/grokify/gocharts/v2 v2.24.11
-	github.com/grokify/mogo v0.70.5
+	github.com/grokify/mogo v0.70.8
 	github.com/jessevdk/go-flags v1.6.1
 )
 
 require (
 	github.com/aquasecurity/trivy-db v0.0.0-20250604074528-8a8d6e3cc002 // indirect
 	github.com/fatih/color v1.18.0 // indirect
-	github.com/google/go-containerregistry v0.20.5 // indirect
+	github.com/google/go-containerregistry v0.20.6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
@@ -26,8 +26,8 @@ require (
 	github.com/richardlehane/mscfb v1.0.4 // indirect
 	github.com/richardlehane/msoleps v1.0.4 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
-	github.com/samber/lo v1.50.0 // indirect
-	github.com/tiendc/go-deepcopy v1.6.0 // indirect
+	github.com/samber/lo v1.51.0 // indirect
+	github.com/tiendc/go-deepcopy v1.6.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/quicktemplate v1.8.0 // indirect
 	github.com/xuri/efp v0.0.1 // indirect
