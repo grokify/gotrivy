@@ -1,16 +1,16 @@
 module github.com/grokify/gotrivy
 
-go 1.24.2
+go 1.24.5
 
 require (
-	github.com/aquasecurity/trivy v0.63.0
-	github.com/grokify/gocharts/v2 v2.24.15
-	github.com/grokify/mogo v0.70.13
+	github.com/aquasecurity/trivy v0.65.0
+	github.com/grokify/gocharts/v2 v2.24.16
+	github.com/grokify/mogo v0.70.14
 	github.com/jessevdk/go-flags v1.6.1
 )
 
 require (
-	github.com/aquasecurity/trivy-db v0.0.0-20250604074528-8a8d6e3cc002 // indirect
+	github.com/aquasecurity/trivy-db v0.0.0-20250731052236-c7c831e2254d // indirect
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/google/go-containerregistry v0.20.6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
@@ -21,7 +21,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/olekukonko/errors v1.1.0 // indirect
 	github.com/olekukonko/ll v0.0.9 // indirect
-	github.com/olekukonko/tablewriter v1.0.8 // indirect
+	github.com/olekukonko/tablewriter v1.0.9 // indirect
 	github.com/package-url/packageurl-go v0.1.3 // indirect
 	github.com/richardlehane/mscfb v1.0.4 // indirect
 	github.com/richardlehane/msoleps v1.0.4 // indirect
