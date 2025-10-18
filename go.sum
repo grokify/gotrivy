@@ -1,7 +1,7 @@
-github.com/aquasecurity/trivy v0.66.0 h1:eU0M0PXQ6F0UxKYxMjI7b0ue07il3l1eqcBGTliE+tY=
-github.com/aquasecurity/trivy v0.66.0/go.mod h1:DFk2QdnR/ZXSfgy2xR7sPPWM/mJvmnVUzqtowsQJSVo=
-github.com/aquasecurity/trivy-db v0.0.0-20250915120008-e96046ef17aa h1:IrjaeEhVBdBL0V0lXbIz4if9QvyrgvJM41QUoCcNb2M=
-github.com/aquasecurity/trivy-db v0.0.0-20250915120008-e96046ef17aa/go.mod h1:upAJqDQkN5FdIJbtJMpokncGNhYAPGkpoCbaGciWPt4=
+github.com/aquasecurity/trivy v0.67.2 h1:Y/lWulURavDuXuU0YmExzho7IDhQe6b/RgNwrKPO2P8=
+github.com/aquasecurity/trivy v0.67.2/go.mod h1:jz7tY/h1pvocQyGoDpPyOECgwSigVvKNCiXmeWFlJIM=
+github.com/aquasecurity/trivy-db v0.0.0-20250929072116-eba1ced2340a h1:Wmvjq3zQGsZ8Wlqh75zvujh7LZNTXU4YoEf8tyL1LoM=
+github.com/aquasecurity/trivy-db v0.0.0-20250929072116-eba1ced2340a/go.mod h1:upAJqDQkN5FdIJbtJMpokncGNhYAPGkpoCbaGciWPt4=
 github.com/clipperhouse/uax29/v2 v2.2.0 h1:ChwIKnQN3kcZteTXMgb1wztSgaU+ZemkgWdohwgs8tY=
 github.com/clipperhouse/uax29/v2 v2.2.0/go.mod h1:EFJ2TJMRUaplDxHKj1qAEhCtQPW2tJSwu5BF98AuoVM=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
