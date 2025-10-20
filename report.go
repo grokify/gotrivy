@@ -200,12 +200,12 @@ func (r *Report) VulnerabiliesTable(addDates bool) (*table.Table, error) {
 			}
 			if addDates {
 				if vln.Vulnerability.PublishedDate != nil && !vln.Vulnerability.PublishedDate.IsZero() {
-					row = append(row, vln.Vulnerability.PublishedDate.Format(time.RFC3339))
+					row = append(row, vln.Vulnerability.PublishedDate.Format(time.DateOnly))
 				} else {
 					row = append(row, "")
 				}
 				if vln.Vulnerability.LastModifiedDate != nil && !vln.Vulnerability.LastModifiedDate.IsZero() {
-					row = append(row, vln.Vulnerability.LastModifiedDate.Format(time.RFC3339))
+					row = append(row, vln.Vulnerability.LastModifiedDate.Format(time.DateOnly))
 				} else {
 					row = append(row, "")
 				}
