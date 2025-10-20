@@ -28,6 +28,7 @@ func main() {
 	}
 
 	fmt.Printf("INPUT: %s\n", opts.Input)
+
 	r, err := gotrivy.ReadFile(opts.Input)
 	if err != nil {
 		log.Fatal(err)
@@ -41,9 +42,11 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = ts.WriteXLSX(opts.Output)
-	if err != nil {
-		log.Fatal(err)
+	if opts.Output != "" {
+		err = ts.WriteXLSX(opts.Output)
+		if err != nil {
+			log.Fatal(err)
+		}
 	}
 
 	fmt.Println("DONE")
