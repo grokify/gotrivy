@@ -4,7 +4,7 @@ go 1.24.5
 
 require (
 	github.com/aquasecurity/trivy v0.66.0
-	github.com/grokify/gocharts/v2 v2.25.5
+	github.com/grokify/gocharts/v2 v2.26.0
 	github.com/grokify/mogo v0.71.3
 	github.com/jessevdk/go-flags v1.6.1
 )
@@ -22,7 +22,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.19 // indirect
 	github.com/olekukonko/cat v0.0.0-20250911104152-50322a0618f6 // indirect
 	github.com/olekukonko/errors v1.1.0 // indirect
-	github.com/olekukonko/ll v0.1.1 // indirect
+	github.com/olekukonko/ll v0.1.2 // indirect
 	github.com/olekukonko/tablewriter v1.1.0 // indirect
 	github.com/package-url/packageurl-go v0.1.3 // indirect
 	github.com/richardlehane/mscfb v1.0.4 // indirect
@@ -33,10 +33,10 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/quicktemplate v1.8.0 // indirect
 	github.com/xuri/efp v0.0.1 // indirect
-	github.com/xuri/excelize/v2 v2.9.1 // indirect
-	github.com/xuri/nfp v0.0.1 // indirect
+	github.com/xuri/excelize/v2 v2.10.0 // indirect
+	github.com/xuri/nfp v0.0.2-0.20250530014748-2ddeb826f9a9 // indirect
 	golang.org/x/crypto v0.43.0 // indirect
-	golang.org/x/exp v0.0.0-20251009144603-d2f985daa21b // indirect
+	golang.org/x/exp v0.0.0-20251017212417-90e834f514db // indirect
 	golang.org/x/image v0.32.0 // indirect
 	golang.org/x/net v0.46.0 // indirect
 	golang.org/x/sys v0.37.0 // indirect
