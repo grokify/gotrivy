@@ -102,6 +102,12 @@ Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 2, CRITICAL: 0)
 % trivy image --reset
 ```
 
+## WebGoat Example
+
+```
+% trivy fs target/webgoat-2025.4-SNAPSHOT.jar --skip-files ".*\.class,.*META-INF.*"
+```
+
  [build-status-svg]: https://github.com/grokify/gotrivy/actions/workflows/ci.yaml/badge.svg?branch=main
  [build-status-url]: https://github.com/grokify/gotrivy/actions/workflows/ci.yaml
  [lint-status-svg]: https://github.com/grokify/gotrivy/actions/workflows/lint.yaml/badge.svg?branch=main
