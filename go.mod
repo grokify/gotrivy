@@ -1,11 +1,11 @@
 module github.com/grokify/gotrivy
 
-go 1.25.6
+go 1.26.0
 
 require (
 	github.com/aquasecurity/trivy v0.69.4
 	github.com/grokify/gocharts/v2 v2.27.0
-	github.com/grokify/mogo v0.73.5
+	github.com/grokify/mogo v0.74.1
 	github.com/jessevdk/go-flags v1.6.1
 )
 
@@ -48,7 +48,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.40.0 // indirect
 	golang.org/x/crypto v0.49.0 // indirect
 	golang.org/x/exp v0.0.0-20260312153236-7ab1446f8b90 // indirect
-	golang.org/x/image v0.37.0 // indirect
+	golang.org/x/image v0.38.0 // indirect
 	golang.org/x/net v0.52.0 // indirect
 	golang.org/x/sys v0.42.0 // indirect
 	golang.org/x/text v0.35.0 // indirect
