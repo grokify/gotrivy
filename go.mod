@@ -5,7 +5,7 @@ go 1.26.3
 require (
 	github.com/aquasecurity/trivy v0.73.0
 	github.com/grokify/gocharts/v2 v2.27.0
-	github.com/grokify/mogo v0.74.1
+	github.com/grokify/mogo v0.74.7
 	github.com/jessevdk/go-flags v1.6.1
 )
 
@@ -44,8 +44,8 @@ require (
 	go.opentelemetry.io/otel v1.44.0 // indirect
 	go.opentelemetry.io/otel/trace v1.44.0 // indirect
 	golang.org/x/crypto v0.54.0 // indirect
-	golang.org/x/exp v0.0.0-20260603202125-055de637280b // indirect
-	golang.org/x/image v0.38.0 // indirect
+	golang.org/x/exp v0.0.0-20260727155853-b88d891fe743 // indirect
+	golang.org/x/image v0.44.0 // indirect
 	golang.org/x/net v0.57.0 // indirect
 	golang.org/x/sys v0.47.0 // indirect
 	golang.org/x/text v0.40.0 // indirect
