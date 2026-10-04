@@ -20,7 +20,7 @@ require (
 	github.com/google/go-containerregistry v0.21.7 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
-	github.com/huandu/xstrings v1.5.0 // indirect
+	github.com/huandu/xstrings v1.6.0 // indirect
 	github.com/mattn/go-colorable v0.1.15 // indirect
 	github.com/mattn/go-isatty v0.0.24 // indirect
 	github.com/mattn/go-runewidth v0.0.28 // indirect
