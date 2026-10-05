@@ -1,0 +1,147 @@
+{
+  "irVersion": "1.0",
+  "project": "gotrivy",
+  "repository": "https://github.com/grokify/gotrivy",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": [
+    "grokify",
+    "johncwang@gmail.com"
+  ],
+  "bots": [
+    "dependabot[bot]"
+  ],
+  "releases": [
+    {
+      "version": "v0.5.0",
+      "date": "2026-10-05",
+      "commit": "069e279",
+      "highlights": [
+        { "description": "Trivy reports now convert to the shared [findingspec](https://github.com/plexusone/findingspec) IR — normalized findings usable across scanners", "commit": "069e279" },
+        { "description": "New `ScanFilepath` wrapper and `cmd/gotrivyscan` CLI run `trivy fs` and return a parsed report", "commit": "2fb760b" }
+      ],
+      "added": [
+        { "description": "Trivy report → `findingspec.Finding` conversion (security domain) with typed CVSS, fix state, and package metadata", "commit": "069e279" },
+        { "description": "`ScanFilepath` runs `trivy fs --format json --scanners vuln` via the installed trivy binary and returns the parsed `types.Report`", "commit": "2fb760b" },
+        { "description": "`cmd/gotrivyscan` CLI: scan a path and write an XLSX report", "commit": "2fb760b" }
+      ],
+      "fixed": [
+        { "description": "Restore a consistent `go.sum` after a dependency-update merge left entries missing", "commit": "654cfaf" }
+      ],
+      "dependencies": [
+        { "description": "Add `github.com/plexusone/findingspec` v0.1.0", "commit": "069e279" },
+        { "description": "Bump `github.com/aquasecurity/trivy` to v0.75.0 (Go 1.27), `github.com/grokify/mogo` to v0.75.0, `github.com/grokify/gocharts/v2` to v2.27.1", "commit": "4fbce35" }
+      ]
+    },
+    {
+      "version": "v0.4.7",
+      "date": "2026-05-09",
+      "commit": "4112aa2",
+      "changed": [
+        { "description": "Migrate CI to shared org workflows", "commit": "4112aa2" }
+      ],
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "3b82a32" }
+      ]
+    },
+    {
+      "version": "v0.4.6",
+      "date": "2026-03-02",
+      "commit": "662c5b4",
+      "added": [
+        { "description": "`cmd/gotrivy`: optional output-file writing", "commit": "662c5b4" }
+      ],
+      "changed": [
+        { "description": "Add CodeQL SAST workflow and update Go build versions", "commit": "7544a44" }
+      ],
+      "fixed": [
+        { "description": "`report.go`: use `time.DateOnly`", "commit": "f22d36b" }
+      ],
+      "documentation": [
+        { "description": "Add a WebGoat scan example to the README", "commit": "be44b67" }
+      ]
+    },
+    {
+      "version": "v0.4.5",
+      "date": "2025-08-03",
+      "commit": "14fd1c7",
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "14fd1c7" }
+      ]
+    },
+    {
+      "version": "v0.4.4",
+      "date": "2025-06-08",
+      "commit": "5d2fff0",
+      "changed": [
+        { "description": "Rename CI workflows and update golangci-lint config", "commit": "5d2fff0" }
+      ],
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "e0fe441" }
+      ]
+    },
+    {
+      "version": "v0.4.3",
+      "date": "2024-08-18",
+      "commit": "f48d4fb",
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "f48d4fb" }
+      ]
+    },
+    {
+      "version": "v0.4.2",
+      "date": "2024-07-14",
+      "commit": "e0be45c",
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "e0be45c" }
+      ]
+    },
+    {
+      "version": "v0.4.1",
+      "date": "2024-03-23",
+      "commit": "13e1b9a",
+      "changed": [
+        { "description": "`Report`: move `tbl.FormatMap` after `tbl.Columns`; remove unneeded code", "commit": "16a1764" }
+      ],
+      "dependencies": [
+        { "description": "Update Go module dependencies and Go version", "commit": "5fb16d8" }
+      ]
+    },
+    {
+      "version": "v0.4.0",
+      "date": "2023-11-04",
+      "commit": "ae52f2c",
+      "highlights": [
+        { "description": "Initial feature set: `gotrivy.Report` (an extension of Trivy's `types.Report`) with XLSX report generation and histogram summaries, plus the `cmd/gotrivy` CLI", "commit": "a9b025c" }
+      ],
+      "added": [
+        { "description": "`Report.BySeverityHistogramSet()`, `Report.ByYearHistogramSets()`, `Report.ByLibraryHistogramSets()`, and `Report.TableSet()`", "commit": "ae52f2c" },
+        { "description": "`cmd/gotrivy` CLI generating XLSX reports from a Trivy JSON report", "commit": "a9b025c" }
+      ]
+    },
+    {
+      "version": "v0.3.0",
+      "date": "2023-11-04",
+      "commit": "",
+      "changed": [
+        { "description": "Initial development iteration" }
+      ]
+    },
+    {
+      "version": "v0.2.0",
+      "date": "2023-11-04",
+      "commit": "",
+      "changed": [
+        { "description": "Initial development iteration" }
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "date": "2023-11-04",
+      "commit": "4a94275",
+      "highlights": [
+        { "description": "Initial release", "commit": "4a94275" }
+      ]
+    }
+  ]
+}

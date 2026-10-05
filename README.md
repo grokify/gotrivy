@@ -40,6 +40,16 @@ The primary purpose of this library is currently to create XSLX reports from a J
 
 [`gotrivy.Report`](https://pkg.go.dev/github.com/grokify/gotrivy#Report) is an extension of [`github.com/aquasecurity/trivy/pkg/types.Report`](https://pkg.go.dev/github.com/aquasecurity/trivy/pkg/types#Report).
 
+## findingspec
+
+`gotrivy` converts Trivy reports to the shared [findingspec](https://github.com/plexusone/findingspec) finding model, a scanner-neutral intermediate representation. Converting to `findingspec.Finding` lets Trivy results be aggregated, filtered, and reported alongside findings from other scanners using one common schema.
+
+## Scanning
+
+In addition to parsing an existing Trivy JSON report, [`gotrivy.ScanFilepath`](https://pkg.go.dev/github.com/grokify/gotrivy#ScanFilepath) runs a `trivy fs` scan by shelling out to the installed `trivy` binary and returns the parsed report. The [`cmd/gotrivyscan`](cmd/gotrivyscan/main.go) CLI scans a path and writes an XLSX report.
+
+For in-process scanning that imports Trivy as a Go library (no `trivy` binary required), see the separate [`github.com/grokify/gotrivyext`](https://github.com/grokify/gotrivyext) module.
+
 ## Installation
 
 `go install github.com/grokify/gotrivy/cmd/gotrivy`
