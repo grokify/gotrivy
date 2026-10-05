@@ -1,16 +1,17 @@
 module github.com/grokify/gotrivy
 
-go 1.26.3
+go 1.26.4
 
 require (
 	github.com/aquasecurity/trivy v0.74.0
+	github.com/aquasecurity/trivy-db v0.0.0-20260813095258-0e0340a01b57
 	github.com/grokify/gocharts/v2 v2.27.0
 	github.com/grokify/mogo v0.74.1
 	github.com/jessevdk/go-flags v1.6.1
+	github.com/plexusone/findingspec v0.1.0
 )
 
 require (
-	github.com/aquasecurity/trivy-db v0.0.0-20260813095258-0e0340a01b57 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/clipperhouse/displaywidth v0.11.0 // indirect
 	github.com/clipperhouse/uax29/v2 v2.7.0 // indirect
@@ -20,6 +21,7 @@ require (
 	github.com/google/go-containerregistry v0.21.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
+	github.com/grokify/priority-frameworks v0.4.0 // indirect
 	github.com/huandu/xstrings v1.6.0 // indirect
 	github.com/mattn/go-colorable v0.1.15 // indirect
 	github.com/mattn/go-isatty v0.0.24 // indirect

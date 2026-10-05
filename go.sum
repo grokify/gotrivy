@@ -77,6 +77,8 @@ github.com/grokify/gocharts/v2 v2.27.0 h1:Ca9dlnd+JakmQZzDrRiRRkvRYotW5VXW/72emO
 github.com/grokify/gocharts/v2 v2.27.0/go.mod h1:3buFARwTBlVwHYHPmyS0tHyr1U1GK8hnYYA6+TTTAcU=
 github.com/grokify/mogo v0.74.1 h1:oODNqQFBWD4lNEdr5gq0eDMVUUyP26bOEboK9UZycnw=
 github.com/grokify/mogo v0.74.1/go.mod h1:RC7/sy7MsyZSwJesNohN2EkGvgSFeSLvzOw4c/dGdSo=
+github.com/grokify/priority-frameworks v0.4.0 h1:Wwl3uLRDjMF/EdoiIWklRQnI6q5ZTvYKXzdbSZ9jKUY=
+github.com/grokify/priority-frameworks v0.4.0/go.mod h1:41SQQzkkb94vCIMO9IYoCITowrNtTgMLwrJqq6Fe5DY=
 github.com/hashicorp/errwrap v1.1.0 h1:OxrOeh75EUXMY8TBjag2fzXGZ40LB6IKw45YeGUDY2I=
 github.com/hashicorp/errwrap v1.1.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
 github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+lD48awMYo=
@@ -139,6 +141,8 @@ github.com/opencontainers/image-spec v1.1.1/go.mod h1:qpqAh3Dmcf36wStyyWU+kCeDgr
 github.com/package-url/packageurl-go v0.1.6 h1:YO3p6u1XmCUliivUg/qWphaY8vI6hxSnnPv7Bfg3m5M=
 github.com/package-url/packageurl-go v0.1.6/go.mod h1:nKAWB8E6uk1MHqiS/lQb9pYBGH2+mdJ2PJc2s50dQY0=
 github.com/pborman/getopt v0.0.0-20170112200414-7148bc3a4c30/go.mod h1:85jBQOZwpVEaDAr341tbn15RS4fCAsIst0qp7i8ex1o=
+github.com/plexusone/findingspec v0.1.0 h1:AJpVBCGPDeCV0yiM9a2kA1TUfVwLUIuYCt0vgHote50=
+github.com/plexusone/findingspec v0.1.0/go.mod h1:12TFwkV7CgsZli9WCJNlWQoxrmg/sDEn2ePz8ArLf68=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRIccs7FGNTlIRMkT8wgtp5eCXdBlqhYGL6U=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
