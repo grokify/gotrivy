@@ -3,8 +3,8 @@ module github.com/grokify/gotrivy
 go 1.27.0
 
 require (
-	github.com/aquasecurity/trivy v0.75.0
-	github.com/aquasecurity/trivy-db v0.0.0-20261001090913-650c4091f951
+	github.com/aquasecurity/trivy v0.76.2
+	github.com/aquasecurity/trivy-db v0.0.0-20261012084708-cbebf2ecd6df
 	github.com/grokify/gocharts/v2 v2.27.1
 	github.com/grokify/mogo v0.75.0
 	github.com/jessevdk/go-flags v1.6.1
@@ -45,12 +45,12 @@ require (
 	github.com/xuri/nfp v0.0.2-0.20250530014748-2ddeb826f9a9 // indirect
 	go.opentelemetry.io/otel v1.47.0 // indirect
 	go.opentelemetry.io/otel/trace v1.47.0 // indirect
-	golang.org/x/crypto v0.57.0 // indirect
+	golang.org/x/crypto v0.58.0 // indirect
 	golang.org/x/exp v0.0.0-20260908205506-85c1c2202aba // indirect
 	golang.org/x/image v0.46.0 // indirect
-	golang.org/x/net v0.59.0 // indirect
-	golang.org/x/sys v0.48.0 // indirect
-	golang.org/x/text v0.42.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
+	golang.org/x/sys v0.49.0 // indirect
+	golang.org/x/text v0.43.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da // indirect
 	gonum.org/v1/gonum v0.17.0 // indirect
 )
