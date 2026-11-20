@@ -139,8 +139,8 @@ github.com/opencontainers/image-spec v1.1.1/go.mod h1:qpqAh3Dmcf36wStyyWU+kCeDgr
 github.com/package-url/packageurl-go v0.1.7 h1:iFWg6tzAjLA6F/qX3M5nZaiMHJgc+p2zxVyr/fY+sZY=
 github.com/package-url/packageurl-go v0.1.7/go.mod h1:nKAWB8E6uk1MHqiS/lQb9pYBGH2+mdJ2PJc2s50dQY0=
 github.com/pborman/getopt v0.0.0-20170112200414-7148bc3a4c30/go.mod h1:85jBQOZwpVEaDAr341tbn15RS4fCAsIst0qp7i8ex1o=
-github.com/plexusone/findingspec v0.1.0 h1:AJpVBCGPDeCV0yiM9a2kA1TUfVwLUIuYCt0vgHote50=
-github.com/plexusone/findingspec v0.1.0/go.mod h1:12TFwkV7CgsZli9WCJNlWQoxrmg/sDEn2ePz8ArLf68=
+github.com/plexusone/findingspec v0.2.0 h1:1uIwYOXHBqTwaH/sk/+p7o5elEYM1TWA3OIrqL0fVjc=
+github.com/plexusone/findingspec v0.2.0/go.mod h1:12TFwkV7CgsZli9WCJNlWQoxrmg/sDEn2ePz8ArLf68=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/power-devops/perfstat v0.0.0-20240221224432-82ca36839d55 h1:o4JXh1EVt9k/+g42oCprj/FisM4qX9L3sZB3upGN2ZU=
 github.com/power-devops/perfstat v0.0.0-20240221224432-82ca36839d55/go.mod h1:OmDBASR4679mdNQnz2pUhc2G8CO2JrUAVFDRBDP/hJE=
