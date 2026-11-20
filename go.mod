@@ -8,7 +8,7 @@ require (
 	github.com/grokify/gocharts/v2 v2.27.1
 	github.com/grokify/mogo v0.75.0
 	github.com/jessevdk/go-flags v1.6.1
-	github.com/plexusone/findingspec v0.1.0
+	github.com/plexusone/findingspec v0.2.0
 )
 
 require (
